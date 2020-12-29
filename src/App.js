@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Fragment } from 'react';
+import FormularioCadastro from './components/FormularioCadastro/FormularioCadastro';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    //O frangment só está aqui pq ele encapsula todos os elementos filhos
+    //que é a regra do react
+    <Fragment>
+      <h1>Formulário de cadastro</h1>
+      <FormularioCadastro />
+
+
+    </Fragment>
+    
   );
 }
 
