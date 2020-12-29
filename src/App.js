@@ -6,14 +6,15 @@ import FormularioCadastro from './components/FormularioCadastro/FormularioCadast
 function App() {
   return (
 
+
     //O frangment só está aqui pq ele encapsula todos os elementos filhos
     //que é a regra do react
-    <Fragment>
+    <Container componenet="article" maxWidth="sm">
       <h1>Formulário de cadastro</h1>
       <FormularioCadastro />
 
 
-    </Fragment>
+    </Container>
     
   );
 }

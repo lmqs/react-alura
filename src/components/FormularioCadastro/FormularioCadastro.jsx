@@ -6,15 +6,10 @@ function FormularioCadastro(){
     //toda função tem que ter um retorno
     return(
         <form>
-            <TextField id="nome" label="Nome"/>
+            <TextField id="nome" label="Nome" variant="outlined" fullWidth />
+            <TextField id="sobrenome" label="Sobrenome" variant="outlined"/>
+            <TextField id="cpf" label="CPF" variant="outlined"/>
             
-
-            <label>Sobrenome</label>
-            <input type="text"/>
-
-            <label>cpf</label>
-            <input type="text"/>
-
             <label>Promoções</label>
             <input type="checkbox"/>
 
